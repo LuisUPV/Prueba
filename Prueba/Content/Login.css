@@ -1,0 +1,86 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+
+#bodyImagen {
+    background-image: url('../Images/background/bkg.jpg');
+}
+
+#bodyImagen2 {
+    background-image: url('../Images/background/fondo_synergie.jpg');
+}
+
+.checkbox {
+    padding-left: 0;
+}
+
+img {
+    width: auto;
+    height: 70px;
+}
+
+#login h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+#login .btn.btn-custom {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+a {
+    margin: 6px 0;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 5px;
+}
+
+.registro {
+    border-radius: 3px;
+}
+
+    .registro:hover {
+        background: rgba(255,255,255,0.3);
+    }
+
+a:hover {
+    color: #fff;
+}
+
+.form-control {
+    background: rgba(255,255,255,0.5);
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+#login .form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #fff;
+}
+
+.form-wrap {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: none !important;
+}
+
+.modal-footer {
+    padding: 19px 20px 0;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}

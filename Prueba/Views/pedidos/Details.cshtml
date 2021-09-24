@@ -1,0 +1,67 @@
+﻿@model Prueba.pedidos
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>pedidos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_id_relacion_productos_por_pedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_id_relacion_productos_por_pedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_nombre_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_nombre_cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuarios.usuario_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuarios.usuario_nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_pedido }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

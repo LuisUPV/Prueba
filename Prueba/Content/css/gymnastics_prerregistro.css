@@ -1,0 +1,36 @@
+#page-content {
+    background-color: rgb(26 57 107 / 56%);
+    background-image:url('../../Images/background/3414695.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: hue;
+    padding: 20px;
+}
+
+.block {
+    background-color: rgb(255 255 255 / 60%);
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.block-title {
+    border-bottom: none;
+    background: rgb(50 50 50/ 10%);
+}
+
+.nav-justified>li>a {
+    border-radius:5px;
+}
+
+.input-group {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 15%);
+}
+
+label {
+    text-transform:uppercase;
+    font-weight:500;
+}

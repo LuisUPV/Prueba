@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Prueba.usuarios>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_correo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_id_rol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_apellido_paterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_apellido_materno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario_foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.roles.rol_nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_correo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_id_rol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_apellido_paterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_apellido_materno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario_foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.roles.rol_nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_usuario }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_usuario }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_usuario })
+        </td>
+    </tr>
+}
+
+</table>

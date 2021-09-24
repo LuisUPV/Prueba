@@ -1,0 +1,428 @@
+body {
+}
+
+.datos_del_observador {
+    background: #ff5600;
+    color: #FFFFFF;
+}
+
+.tipos_de_observacion {
+    color: #00039f;
+}
+
+.clasificacion_del_riesgo {
+    background: #00b600;
+    color: #FFFFFF;
+}
+
+.clasificacion_del_riesgo_inmediatas {
+    background: #00a200;
+    color: #FFFFFF;
+}
+
+.clasificacion_del_riesgo_contencion {
+    background: #7e1400;
+    color: #FFFFFF;
+}
+
+.clasificacion_del_riesgo_definitivas {
+    background: #0027b6;
+    color: #FFFFFF;
+}
+
+.descripcion_de_la_observacion {
+    background: #67d2ff;
+    color: #FFFFFF;
+}
+
+.comportamientos_inseguros {
+    background: #d70000;
+    color: #FFFFFF;
+}
+
+.metodos_y_procedimientos {
+    background: #0e35e3;
+    color: #FFFFFF;
+}
+
+.maquina_herramienta_y_equipo {
+    background: #ffc300;
+    color: #FFFFFF;
+}
+
+.materiales_areas_de_trabajo {
+    background: #94f3ff;
+    color: #FFFFFF;
+}
+
+.medio_ambiente_laboral {
+    background: #088700;
+    color: #FFFFFF;
+}
+
+
+.observador-block{
+    float: left;
+    background-image: linear-gradient(to bottom , rgb(255, 247, 161) 80%, rgba(253, 205, 76));
+    height: auto;
+    border-radius: 17px 17px 17px 17px;
+    /* margin-left: 20px; */
+}
+
+.title-lbl{
+    background-color: rgb(238, 122, 45);
+    background-image: linear-gradient(to bottom , rgb(249, 180, 41) 10%, rgb(238, 122, 45) 80%, rgba(249, 180, 41));
+    border-radius: 10px 0px 20px 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*.tipo-observacion-block{ 
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    height: auto;
+}*/
+
+.tipo-observacion-title{      
+    text-align: center;
+    font-weight: bold;
+}
+
+.descripcion-hallazgo-title{ 
+    margin-top: 50px;
+    float: left; 
+    background-image: linear-gradient(to bottom , rgb(108, 150, 189) 80%, rgba(123, 170, 211)); 
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+textarea {
+   resize: none;
+}
+
+.clasif-riesgoblock{    
+    margin-top: 10px;
+    background-color: rgb(192, 213, 100);
+    height: auto;    
+    border-radius: 15px 15px 15px 15px;
+}
+
+.title-lblriesgo{
+   background-image: linear-gradient(to right , rgb(97, 171, 60), rgba(0, 116, 54)80%, rgba(108, 175, 60));
+   border-radius: 20px 0px 20px 0px;
+   text-align: center;
+   color: white;
+   font-weight: bold;
+   height: 40px;
+   vertical-align: middle;
+   overflow: hidden;
+   margin: 10px 0;
+   float: left;
+   width: 100%;
+}
+
+
+
+.inmediatas-title,.contencion-title,.definitivas-title{
+    background-image: linear-gradient(to right , rgb(97, 171, 60), rgba(0, 116, 54)80%, rgba(108, 175, 60));
+    text-align: center;
+    color: white;
+    margin-top:5px;
+    /* height: 50px; */
+    padding: 1px 0;
+}
+.contencion-title{
+    background-image: linear-gradient(to right ,rgb(46, 33, 31), rgb(129, 52, 33) 40%, rgb(46, 33, 31));
+
+}
+
+.definitivas-title{
+    background-image: linear-gradient(to right ,rgb(45, 52, 101), rgb(10, 100, 161) 40%, rgb(45, 52, 101));
+}
+
+.inmediatasNotes{
+    margin-bottom: 5px;
+    border-radius: 0px;
+}
+
+.comportamientosList-title,.title-section{
+    background-image: linear-gradient(to right ,rgb(0, 137, 194), rgb(54, 68, 134) 40%, rgb(0, 137, 194));
+    color: white;
+    text-align: center;
+    height: 60px;
+    vertical-align: middle;
+    /* line-height: 135px; */
+    /* overflow: hidden; */
+}
+
+.comportamientosList-title h3{
+  line-height:40px;
+  font-weight:800;
+  font-size:20px
+}
+
+.title-section {
+    height: 40px;
+    color: white;
+}
+
+.cllbl{background-color: rgb(189, 46, 40); color: white; text-align: center; margin-top: -40px;}
+.mplbl{background-color: rgb(61, 67, 125); color: white; text-align: center;}
+.mhelbl{background-color: rgb(251, 189, 39); color: white; text-align: center;}
+.matlbl{background-color: rgb(159, 204, 231); color: white; text-align: center;}
+.mallbl{background-color: rgb(112, 178, 60); color: white; text-align: center;}
+
+.comportamiento-table {
+    margin-top: -16px;
+    width: 100%;
+    text-align: left;
+}
+
+.borderPlantilla{
+    /* border: 1px ridge; */
+    /* border-color: darkslategray; */
+    /* border-radius: 10px 10px 10px 10px; */
+}
+
+.leftSide{
+    /* right: 35px; */
+}
+
+tr{
+/*     height: 35px;   */
+}
+td{
+    height: 35px;
+    padding:3px 0
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 8px;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+
+
+
+/*======================================================================>>>>>>CONTROLES PERSONALIZADOS<<<<<<===========================================================*/
+
+/* Contenedor, label */
+.container-box {
+  float: left;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Ocultar checkbox nativo del navegador */
+.container-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* CHECKBOX personalizado TAMAÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œO Y ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´POSICION*/ 
+.checkmark {
+  position: absolute;  
+  left: -15px;
+  height: 30px;
+  width: 80px;
+  border: 2px solid black;
+}
+
+
+/*CHECKBOX personalizado TAMAÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œO Y ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´POSICION COMPORTAMIENTOS*/
+.comportamientosChk{
+  border: 1px solid black; 
+  height: 25px;
+  left: 4px;
+  width: calc(100% - 8px);
+  top: calc(100% - 5px);
+}
+
+/* MOSE OVER */
+.container-box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* FONDO CUANDO ESTA MARCADO */
+.container-box input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/*FONDO CHECKBOX COMPORTAMIENTOS*/
+.container-box input:checked ~ .clchk{background-color: rgb(189, 46, 40);}
+.container-box input:checked ~ .mpchk{background-color: rgb(61, 67, 125);}
+.container-box input:checked ~ .mhechk{background-color: rgb(251, 189, 39);}
+.container-box input:checked ~ .matchk{background-color: rgb(159, 204, 231);}
+.container-box input:checked ~ .malchk{background-color: rgb(112, 178, 60);}
+
+/* ESCONDER MARCA CUANDO NO ESTE MARCADO */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* MOSTRAR CUANDO SE PRESIONE */
+.container-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* ON CHECKED ESTILO --------------------------------------------------------------->>>>>>> */
+.container-box .checkmark:after {
+  left: 35px;
+  top: 0px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*/*CHKBOX COMPORTAMIENTOS*/
+.container-box .comportamientosChk:after {
+  left: calc(100% - 17px);
+  top: -3px;
+  width: 10px;
+  height: 18px;
+}
+
+
+
+/*TEXT AREA TAMAÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œO FIJO CON RENGLONES---------------------------------------------------------------*/
+
+.notes{
+            background-image: -webkit-linear-gradient(left, white 10px, transparent 10px), -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+            background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+            background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+            background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+            background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+            background-size: 100% 100%, 100% 100%, 100% 31px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            line-height: 31px;
+            font-family: Arial, Helvetica, Sans-serif;
+            padding: 8px;
+        }
+        .notes:focus
+        {
+            outline: none;
+        }
+        body
+        {
+            background-color: #eee;
+        }
+
+
+/*SLIDER CUADRADO PERSONALIZADO------------------------------------------------------------------------------*/
+
+/* The switch - the box around the slider */
+.switchCustom {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;  
+}
+
+/* Hide default HTML checkbox */
+.switchCustom input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderCustom {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: gray;
+  border: 2px solid black;
+}
+
+.switchCustom{
+    left: 10px;
+    bottom: 20px;
+}
+
+.sliderCustom:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;    
+}
+
+input:checked + .red-switch {
+  /*background-color: #2196F3;*/
+  background-color: red;
+}
+
+input:checked + .yellow-switch {
+  /*background-color: #2196F3;*/
+  background-color: yellow;
+}
+
+input:focus + .sliderCustom {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderCustom:before {
+  -webkit-transform: translate(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+
+
+
+
+
+
+
+

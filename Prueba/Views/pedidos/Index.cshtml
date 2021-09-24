@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Prueba.pedidos>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.pedido_costo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pedido_descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pedido_id_relacion_productos_por_pedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pedido_nombre_cliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuarios.usuario_nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.pedido_costo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pedido_descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pedido_id_relacion_productos_por_pedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pedido_nombre_cliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuarios.usuario_nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_pedido }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_pedido }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_pedido })
+        </td>
+    </tr>
+}
+
+</table>

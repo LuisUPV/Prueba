@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e808dbd34382410cac618f246fad835d" Name="Diagram1">
+        <EntityTypeShape EntityType="AVCModel.pantallas" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AVCModel.pedidos" Width="1.5" PointX="5.25" PointY="6" />
+        <EntityTypeShape EntityType="AVCModel.permisos" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="AVCModel.productos" Width="1.5" PointX="5.25" PointY="2.125" />
+        <EntityTypeShape EntityType="AVCModel.relacion_productos_por_pedido" Width="1.5" PointX="7.5" PointY="6.25" />
+        <EntityTypeShape EntityType="AVCModel.roles" Width="1.5" PointX="0.75" PointY="3.625" />
+        <EntityTypeShape EntityType="AVCModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.375" />
+        <EntityTypeShape EntityType="AVCModel.usuarios" Width="1.5" PointX="3" PointY="5.75" />
+        <AssociationConnector Association="AVCModel.FK_permisos_pantallas" />
+        <AssociationConnector Association="AVCModel.FK_pedidos_usuarios" />
+        <AssociationConnector Association="AVCModel.FK_relacion_productos_por_pedido_pedidos" />
+        <AssociationConnector Association="AVCModel.FK_permisos_roles" />
+        <AssociationConnector Association="AVCModel.FK_relacion_productos_por_pedido_productos" />
+        <AssociationConnector Association="AVCModel.FK_usuarios_roles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

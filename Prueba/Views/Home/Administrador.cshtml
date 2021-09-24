@@ -1,0 +1,227 @@
+﻿@using Prueba.Controllers
+@model Prueba.usuarios
+@{
+    ViewBag.Title = "Administrador";
+}
+
+@Styles.Render("~/Content/home.css")
+@*<link href="~/content/bootstrap.min.css" rel="stylesheet" />*@
+
+
+@{
+    var usuario = (Prueba.usuarios)ViewData["usuario"];
+    //var indicativo = "#f14747";
+}
+
+<style>
+    .indice {
+        text-decoration: none;
+        color: black;
+    }
+
+        .indice:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+    .tbheader {
+        color: black;
+        background-color: rgba(173, 216, 230, 0.32941176470588235);
+    }
+
+    .dataTables_wrapper > div {
+        background-color: white;
+    }
+</style>
+@section featured {
+
+    <!--DASBOARD-->
+
+    <h1 class="text-center" style="color: rgb(128, 128, 128)">Sistema de Administración Gymnastics</h1>
+
+    <hr />
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <h3>Bienvenido <span style="font-weight:400">@Session["Nombre_usuario"]</span></h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="customCard ccContratistas hvr-forward hvr-grow-shadow hvr-sweep-to-right hvr-icon-wobble-vertical">
+                        <div class="ccImage "><i class="fa fa-user fa-3x hvr-icon"></i></div>
+                        <div class="ccardTitle">Alumnos</div>
+                        <p class="ccSubTitle">Catalogo de Alumnos</p>
+                        <hr />
+                        <p class="ccContent">Cree, edite, vea y administre el catálogo de Alumnos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="customCard ccQuimicos hvr-forward hvr-grow-shadow hvr-sweep-to-right hvr-icon-wobble-vertical">
+                        <div class="ccImage"><i class="gi gi-tint fa-3x hvr-icon"></i></div>
+                        <div class="ccardTitle">Horarios</div>
+                        <p class="ccSubTitle">Catalogo Horarios</p>
+                        <hr />
+                        <p class="ccContent">Cree, edite, vea y administre el catálogo de Horarios</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="customCard ccTocs hvr-forward hvr-grow-shadow hvr-sweep-to-right hvr-icon-wobble-vertical" onclick="location.href='@Url.Action("Index", "tocs")'">
+                        <div class="ccImage"><i class="fa fa-check-square-o fa-3x hvr-icon"></i></div>
+                        <div class="ccardTitle">Tienda</div>
+                        <p class="ccSubTitle">Catalogo Tienda</p>
+                        <hr />
+                        <p class="ccContent">Cree, edite, vea y administre Productos, Servicios y otros</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="col-md-4">
+                    <div class="customCard ccOils hvr-forward hvr-grow-shadow hvr-sweep-to-right hvr-icon-wobble-vertical" onclick="location.href='@Url.Action("Index", "OILs")'">
+                        <div class="ccImage"><i class="gi gi-list fa-3x hvr-icon"></i></div>
+                        <div class="ccardTitle">Reportes</div>
+                        <p class="ccSubTitle">Adminsitrativos</p>
+                        <hr />
+                        <p class="ccContent">Consulte información relevante de su gymnasio</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="customCard ccBitacora hvr-forward hvr-grow-shadow hvr-sweep-to-right hvr-icon-wobble-vertical">
+                        <div class="ccImage"><i class="fa fa-book fa-3x hvr-icon"></i></div>
+                        <div class="ccardTitle">Bitacora de asistencia</div>
+                        <p class="ccSubTitle">Pase de lista, grupos y mas</p>
+                        <hr />
+                        <p class="ccContent">Cree, edite, vea y administre el catálogo de Bitacora de asistencia</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <a>
+                        <div class="customCard ccKbm hvr-forward hvr-grow-shadow hvr-sweep-to-right hvr-icon-wobble-vertical" onclick="location.href='@Url.Action("Index", "KBM")'">
+                            <div class="ccImage"><i class="gi gi-charts fa-3x hvr-icon"></i></div>
+                            <div class="ccardTitle">Indicadores </div>
+                            <p class="ccSubTitle">Catalogo de Indicadores.</p>
+                            <hr />
+                            <p class="ccContent">Consulte el catálogo de Indicadores </p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    @*<div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <a class="widget widget-hover-effect1">
+                    <div class="widget-simple">
+                        <div class="widget-icon pull-left themed-background-night animation-fadeIn">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <h3 class="widget-content text-left animation-pullDown">
+                            <strong>Contratistas</strong><br>
+                            <small>Ver Contratistas</small>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <a class="widget widget-hover-effect1">
+                    <div class="widget-simple">
+                        <div class="widget-icon pull-left themed-background-amethyst animation-fadeIn">
+                            <i class="gi gi-tint"></i>
+                        </div>
+                        <h3 class="widget-content text-left animation-pullDown">
+                            <strong>Químicos</strong><br>
+                            <small>Ver Químicos</small>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <a class="widget widget-hover-effect1">
+                    <div class="widget-simple" onclick="location.href='@Url.Action("Index", "tocs")'">
+                        <div class="widget-icon pull-left themed-background-fire animation-fadeIn">
+                            <i class="fa fa-check-square-o"></i>
+                        </div>
+                        <h3 class="widget-content text-left animation-pullDown">
+                            <strong>TOCs</strong>
+                            <small>Ver Tarjetas</small>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <a class="widget widget-hover-effect1" onclick="location.href='@Url.Action("Index", "OILs")'">
+                    <div class="widget-simple">
+                        <div class="widget-icon pull-left themed-background animation-fadeIn">
+                            <i class="gi gi-list"></i>
+                        </div>
+                        <h3 class="widget-content text-left animation-pullDown">
+                            <strong>OIL's</strong>
+                            <small>Ver OIL's</small>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <a class="widget widget-hover-effect1">
+                    <div class="widget-simple">
+                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <h3 class="widget-content text-left animation-pullDown">
+                            <strong>Bitacora de accidentes</strong>
+                            <small>Ver Bitacora</small>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <a class="widget widget-hover-effect1">
+                    <div class="widget-simple">
+                        <div class="widget-icon pull-left themed-background-autumn animation-fadeIn">
+                            <i class="gi gi-charts"></i>
+                        </div>
+                        <h3 class="widget-content text-left animation-pullDown">
+                            <strong>Indicadores KBMS's</strong>
+                            <small>Ver Indicadores</small>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+        </div>*@
+    <!--DASBOARD-->
+
+
+
+
+
+}
+@section Scripts {
+
+    <script>$(function () { TablesDatatables.init(); });</script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.datatables').dataTable();
+        });
+
+
+    </script>
+
+}

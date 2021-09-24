@@ -1,0 +1,212 @@
+﻿@using System;
+@using System.Linq;
+
+
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Prueba</title>
+
+    <meta name="description" content="Evaluación de desarrollo">
+    <meta name="author" content="Luis Carlos Anaya Avalos">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+    <link rel="shortcut icon" href="~/Images/Logo/Logos_small-05.png">
+
+    @Styles.Render("~/Content/sweetalert2.scss")
+    @Styles.Render("~/Content/css/bootstrap.min.css")
+    @Styles.Render("~/Content/css/plugins.css")
+    @Styles.Render("~/Content/animacion.css")
+    @Styles.Render("~/Content/css/main.css")
+    @Styles.Render("~/Content/css/themes.css")
+    @Scripts.Render("~/Content/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js")
+    @Styles.Render("~/Content/themes/bootstrap/css/font-awesome.css")
+    @Styles.Render("~/Content/css/colores-tarjeta-toc.css")
+    @Styles.Render("~/Content/css/css_create_oil.css")
+    @Styles.Render("~/Content/css/css_create_toc.css")
+    @Styles.Render("~/Content/seguridad.css")
+
+
+
+
+    @RenderSection("scripts_header", required: false)
+
+    <link href="~/content/css/hover.css" rel="stylesheet" /> <!--Estilos dashboard-->
+
+    <link href="~/content/css/inputhints.css" rel="stylesheet" />
+    <link href="~/content/css/dashboardcss.css" rel="stylesheet" />
+    <link href="~/content/css/kbmoilscss.css" rel="stylesheet" />
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <style>
+        th {
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .container {
+
+            width: initial !important;
+            padding-left: initial;
+            padding-right: initial;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="preloader themed-background">
+        <h1 class="push-top-bottom text-light text-center"><strong>Pro</strong>UI</h1>
+        <div class="inner">
+            <h3 class="text-light visible-lt-ie9 visible-lt-ie10"><strong>Loading..</strong></h3>
+            <div class="preloader-spinner hidden-lt-ie9 hidden-lt-ie10"></div>
+        </div>
+    </div>
+
+    <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
+        <div id="sidebar">
+            <div class="sidebar-scroll">
+                <div class="sidebar-content">
+                    <div style="background-color:#6b8cb0">
+                        <img src="~/Images/Logo/logo.png" alt="" width="50px">
+                    </div>
+                    <div class="sidebar-section sidebar-user clearfix">
+                        <div class="sidebar-user-avatar">
+
+                        </div>
+                        <div class="sidebar-user-name " style="width: 100px;">
+
+                        </div>
+                    </div>
+                    
+                    <ul class="sidebar-nav">
+
+                        @*<p>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        </p>*@
+                        <p>
+                        <li>@Html.ActionLink("Productos", "Index", "productos")</li>
+                        </p>
+                        <p>
+                        <li>@Html.ActionLink("Pedidos", "Index", "pedidos")</li>
+                        </p>
+                        <p>
+                        <li>@Html.ActionLink("Roles", "Index", "roles")</li>
+                        </p>
+                        <p>
+                        <li>@Html.ActionLink("Usuarios", "Index", "usuarios")</li>
+                        </p>
+
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-container">
+
+            <header class="navbar navbar-default">
+                <ul class="nav navbar-nav-custom">
+                    <li>
+                        <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');">
+                            <i class="fa fa-bars fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div id="page-content">
+                <div class="block">
+                    @RenderSection("featured", required: false)
+                    @RenderBody()
+                </div>
+            </div>
+
+            
+
+            <footer class="clearfix">
+                <div class="pull-right">
+                    Desarrollado por   Luis Carlos Anaya Avalos
+                </div>
+                <div class="pull-left">
+                    &copy; @DateTime.Now.Year - Luis Carlos Anaya Avalos
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    @Scripts.Render("~/Content/js/jquery.min.js")
+    <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
+
+    @Scripts.Render("~/Content/js/vendor/bootstrap.min.js")
+    @Scripts.Render("~/Content/js/plugins.js")
+    @Scripts.Render("~/Content/js/app.js")
+    @Scripts.Render("~/Content/js/pages/tablesDatatables.js")
+    @Scripts.Render("~/Content/js/pages/formsWizard.js")
+    @Scripts.Render("~/Scripts/jquery.validate.js")
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="~/Content/js/input-file.min.js"></script>
+
+    <script>
+
+        $(function () { TablesDatatables.init(); });
+
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+
+            //todos los campos en mayuscula
+            //$(function() {
+            //    $('input').keyup(function() {
+            //		if(this.id!="emial")
+            //        this.value = this.value.toLocaleUpperCase();
+            //    });
+            //});
+
+        });
+
+        $('.datepicker').datepicker({
+            format: "yyyy-mm-dd",
+            lang: "es",
+            dayOfWeekStart: 1,
+            timepicker: true,
+            autoclose: true
+        });
+
+        $("form").attr("autocomplete", "off");
+
+    </script>
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

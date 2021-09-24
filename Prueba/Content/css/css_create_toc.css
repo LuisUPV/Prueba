@@ -1,0 +1,26 @@
+﻿.initiallyHiddenBlock {
+    display: none;
+}
+.centrar-div {
+    display: flex;
+    align-items: center;
+}
+
+.remover-borde-div{
+    border: none !important;
+}
+
+.padding-bordeinferior{
+      padding-bottom: 25px;
+}
+
+span.arrow {
+    margin-left: 6px;
+    height:17px;
+}
+label.error {
+    height:17px;
+    padding:1px 5px 0px 5px;
+    font-size:small;
+    color: red;    
+}

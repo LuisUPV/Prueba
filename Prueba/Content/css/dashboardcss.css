@@ -1,0 +1,60 @@
+.customCard{
+    width: 100%;
+    min-height: 145px;
+    background-color: rgb(57, 66, 99);
+    z-index:999999999999999999;
+    float: left;
+    color: white;
+    cursor: pointer;
+}
+
+.ccardTitle{
+    padding 15px;
+    padding-top: 20px;
+    font-size: larger; 
+    align-content: center;   
+}
+
+.ccSubTitle{    
+    padding: 0px 0px 0px;
+    font-size: x-small;
+    margin-left: 10px;
+    color: white;
+}
+
+.ccContent{
+    margin-top: -12px;
+    margin-left: 15px;
+    font-size: smaller;
+}
+
+.ccImage{
+    margin-top: 10px;
+    float: left;
+    padding: 10px 10px 10px 20px;
+}
+
+.ccContratistas{
+    background-color: rgb(136, 136, 136);
+}
+.ccQuimicos{
+    background-color: rgb(175, 100, 204);
+}
+.ccTocs{
+    background-color: rgb(231, 76, 60);
+}
+.ccOils{
+    background-color: rgb(27, 186, 225);
+}
+.ccBitacora{
+    background-color: rgb(39, 174, 96);
+}
+.ccKbm{
+    background-color: rgb(230, 126, 34);
+}
+.colorTheme{
+    background-color: rgb(77, 85, 115);
+    color: white;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+

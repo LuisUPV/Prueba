@@ -1,0 +1,67 @@
+﻿@model Prueba.productos
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>productos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_cantidad_existencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_cantidad_existencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_producto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

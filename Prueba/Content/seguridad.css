@@ -1,0 +1,99 @@
+.table thead th {
+    padding: 10px 20px !important;
+    font-size: 11px !important;
+    text-transform: uppercase;
+}
+
+    .table thead th h3 {
+        font-size: 12px !important;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+.table tbody td {
+    font-size: 12px !important;
+}
+
+.status_td {
+    width: 130px;
+}
+
+.lista_fechas {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 170px;
+}
+
+    .lista_fechas b {
+        font-weight: 400;
+    }
+
+    .lista_fechas span {
+        font-weight: 700;
+    }
+
+.fileUpload {
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+.boton_salir_menu {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    margin: 10px 0;
+}
+
+
+.mensaje_previo {
+    font-style: italic;
+    opacity:0.6;
+}
+
+.nota {
+    display: inline-block;
+    padding: 10px 15px;
+    border-left: 5px solid #bdc3c7;
+    background: #ecf0f1;
+    color: #34495e;
+    width:100%;
+}
+
+.nota-roja {
+    border-left: 5px solid #c0392b;
+    background: #e74c3c;
+    color: #fff;
+}
+
+.nota-naranja {
+    border-left: 5px solid #d35400;
+    background: #e67e22;
+    color: #fff;
+}
+
+.nota-azul {
+    border-left: 5px solid #2980b9;
+    background: #3498db;
+    color: #fff;
+}
+
+
+.nota-verde {
+    border-left: 5px solid #27ae60;
+    background: #2ecc71;
+    color: #fff;
+}

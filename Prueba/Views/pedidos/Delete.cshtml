@@ -1,0 +1,73 @@
+﻿@model Prueba.pedidos
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>pedidos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_id_relacion_productos_por_pedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_id_relacion_productos_por_pedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pedido_nombre_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pedido_nombre_cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relacion_productos_por_pedido.id_relacion_productos_por_pedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuarios.usuario_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuarios.usuario_nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

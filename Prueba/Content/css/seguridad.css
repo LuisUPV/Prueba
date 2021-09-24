@@ -1,0 +1,19 @@
+.table thead th {
+    padding: 10px 20px !important;
+    font-size: 11px !important;
+    text-transform: uppercase;
+}
+
+    .table thead th h3 {
+        font-size: 12px !important;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+.table tbody td {
+    font-size: 12px !important;
+}
+
+.status_td {
+    width: 130px;
+}
